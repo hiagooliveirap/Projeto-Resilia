@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #F2F2F2;
+}
+
+.container{
+    width: 100vw;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: #fff;
+}
+
+.resumo{
+    width: 80%;
+    margin: 60px 0 30px;
+}
+
+.resumo h3{
+    color: #1A70E8;
+}
+
+.vilao{    
+    display: flex;
+    align-items: center;
+    background-color: #fff;            
+    font-size: 20px;           
+    width: 80vw;    
+    margin: 60px 0 20px;    
+    border-radius: 7px;    
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);   
+}
+
+.vilao p{        
+    width: 100%;
+    margin: 10px;    
+}
+
+.inocente{
+    display: flex;    
+    align-items: center;    
+    background-color: #fff; 
+    font-size: 20px;           
+    width: 80vw;    
+    margin: 60px 0 20px;    
+    border-radius: 7px;   
+    border-top: 1px solid rgba(0, 0, 0, 0.2); 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);   
+}
+
+.inocente p{        
+    width: 100%;
+    margin: 10px;   
+    text-align: center;
+    font-size: 40px; 
+    letter-spacing: 5px;
+}
+
+.vilao-img{
+    background: url('https://media.gazetadopovo.com.br/2019/03/b0ab9f7138c2508414e7f21656d09c21-gpMedium.jpg');    
+    width: 250px;  
+    height: 250px;  
+    background-size: cover;   
+    background-position: center;     
+}
+
+.inocente-img{
+    background: url('https://wallpaperaccess.com/full/1630352.jpg');  
+    width: 250px;  
+    height: 250px;    
+    background-size: cover;  
+    background-position: center;  
+}
+
+.texts h2{    
+    text-align: center;
+    margin: 50px;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    align-items: center;
+    width: 90vw;       
+}
+
+.opcoes p{
+    font-size: 18px;    
+}
+
+.opcoes span{
+    color: #1A70E8;
+}
+
+.button button{
+    background-color: #1A70E8;
+    color: #fff;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.button button:hover{
+    background-color: transparent;
+    color: #1A70E8;
+    border: 1px solid #1A70E8;
+    transition: all .3s ease-in-out;    
+}
+
+.button{
+    margin-bottom: 50px;
+}
+
+/*Tela final*/
+.container-final{
+    width: 100vw;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.main-final{    
+    background-color: #fff;        
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px 0;    
+    border-radius: 7px;    
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);   
+}
+
+.vilao-img-final{
+    width: 260px;
+    height: 260px;
+    margin: 40px 0;
+    /* background: url('https://ivancda.github.io/projetoFinalModulo1Resilia/assets/souzaAguiar.png'); */
+    background: url('https://media.gazetadopovo.com.br/2019/03/b0ab9f7138c2508414e7f21656d09c21-gpMedium.jpg');    
+    background-size: cover;  
+    background-position: center;                   
+}
+
+.box-text{
+    padding: 2em 5em;
+    text-align: center;
+}
+
+.button{
+    margin-top: 80px;
+}
+
+@media (max-width: 700px){
+    .opcoes{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .opcoes p{
+        text-align: center;
+    }   
+}
+
+@media (max-width: 585px){
+    .vilao{
+        flex-wrap: wrap;        
+    }    
+
+    .vilao p{
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .vilao-img{
+        width: 100%;
+    }
+
+    .inocente{
+        flex-wrap: wrap;        
+    }    
+
+    .inocente p{
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .inocente-img{
+        width: 100%;
+    }
+
+    .button{
+        margin: 40px;
+    }
+}
